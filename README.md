@@ -6,8 +6,11 @@ The final idea for solving the problem: sentences from different files are vecto
 Because I do not know the full business processes (I do not know which are more crucial: precision or recall) I decided to focus on F1-score.
 
 ## Files
-* main.py - contains entry point for classification. If varibale "load" equal to True, than script load pre-trained model. Set this valiable to False to re-train the model.
-* helpers.py - contains several functions that process data.
-* fasttext_classifier.py - old script that I wrote some time ago. Contains a better interface for fastText.
-* model - pre-trained model.
-* sentences.pkl - fastText vectorized sentences. If you delete this file script will create new vectors and save them into sentences.pkl.
+* `utils.py - contains function from notebooks.`
+* `helpers.py - contains several functions that process data.`
+* `fasttext_classifier.py - old script that I wrote some time ago. Contains a better interface for fastText.`
+* `requirements.txt - packages versions.`
+* `1. Create data.ipynb - jupyter notebook with data preprocessing steps and creating embedding vectors.`
+* `2. Ads classification.ipynb - jupyter notebook with the main results of sequence labeling of advertisements.`
+* `3. Ads classification without stop words.ipynb - jupyter notebook with experements without stop words.`
+* `4. Ads classification with lemmatization and without stop words.ipynb - jupyter notebook with experements without stop words and with lemmatized text.`
